@@ -1,19 +1,159 @@
 <h1tml>
-  <h1>Jincy's Portfolio</h1>
-  <img src="jincyBio.jpg" />
-  <h2><a href="https://jgeev.github.io/Pacman-Game/">Pacman Project</a><h2></h2>
-  <p>
-    <div class="container">
-      <div>
-        <h2>A Pacman Game</h2>
-            <h3> This game allows to add pacmen and moves it within the canvas on game start. </h3>
-            <h4> Steps to play </h4>   
-        <h5 style="color:red">
-          Hit the Add Pacman button to add pacman, hit the Start Game button to move the
-          pacman. Once pacman reaches the edge of the canvas it bounces back and
-          moves in reverse direction.
-        </h5>
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Jincy Jacob</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav bottomUI">
+            <li class="active"><a href="#">Home</a></li>
+
+            <li>
+              <div class="dropdown">
+                <button
+                  class="btn btn-primary dropdown-toggle"
+                  type="button"
+                  data-toggle="dropdown"
+                >
+                  My Skills
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-danger dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+          >
+            Contact Me
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">jincy.varghese.ann@gmail.com</a></li>
+          </ul>
+        </div>
       </div>
-      <img src="pacman.png" width ="200px"/>
-  </p>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-4">
+          <img class="rounded-circle" src="./images/jincyBio.jpg" />
+        </div>
+        <div class="col-md-5 col-sm-5">
+          <h1 class="profile">Jincy Jacob</h1>
+          <h3 class="colored-text">
+            Hi my name is Jincy Jacob. I am a software engineer with hands on
+            experience in CSS ,javascript, HTML, C#, SQL. Currently I am focused
+            on learning the MERN stack. When I am not working I love to paint
+            and also love bird watching. Best way to reach me is via email
+            jincy.varghese.ann@gmail.com
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>My Active Projects</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <button
+            type="button"
+            class="btn btn-success"
+            data-toggle="collapse"
+            data-target="#demo"
+          >
+            A Pacman Game
+          </button>
+          <h4>
+            <a href="https://jgeev.github.io/Pacman-Game/">Pacman Project</a>
+          </h4>
+          <div id="demo" class="collapse bgColor">
+            <h3>
+              This game allows to add pacmen and moves it within the canvas on
+              game start.
+            </h3>
+            <h4>Steps to play</h4>
+            <h5 style="color: rgb(110, 22, 22)">
+              Hit the Add Pacman button to add pacman, hit the Start Game button
+              to move the pacman. Once pacman reaches the edge of the canvas it
+              bounces back and moves in reverse direction.
+            </h5>
+            <img src="./images/pacman.png" width="200px" />
+          </div>
+        </div>
+
+        <div class="col-m-4 col-sm-4">
+          <button
+            type="button"
+            class="btn btn-danger"
+            data-toggle="collapse"
+            data-target="#demo1"
+          >
+            Eye Movement
+          </button>
+          <h4>
+            <a href="https://jgeev.github.io/Eye-movement/">Eye Movement</a>
+          </h4>
+          <div id="demo1" class="collapse bgColor">
+            <h3>Steps to play</h3>
+            <h4 style="color: rgb(103, 54, 54)">
+              Here the mouse move event is used to update the position of the
+              “eye” element displayed on the page. Hover the mouse anywhere
+              around the eye and the eyeballs start following the mouse movement
+            </h4>
+            <img src="./images/Eye movement.png" width="200px" />
+          </div>
+        </div>
+
+        <div class="col-m-4 col-sm-4">
+          <button
+            type="button"
+            class="btn btn-info"
+            data-toggle="collapse"
+            data-target="#demo2"
+          >
+            Bus Tracking Api
+          </button>
+          <h4>
+            <a href="https://github.com/jgeev/RealTimeBusTrackingApi"
+              >Bus Tracking Api</a
+            >
+          </h4>
+          <div id="demo2" class="collapse bgColor">
+            <h3>This is a bus tracking api that uses MTBA data feed</h3>
+            <h4 style="color: rgb(103, 54, 54)">
+              This app requires to create a token for which you have to register
+              on mapbox and use the token to access the maps
+            </h4>
+            <img src"" width="200px" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </h1tml>
