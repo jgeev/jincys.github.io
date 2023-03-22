@@ -1,5 +1,7 @@
-.bgColor {
-  background-color: rgb(227, 252, 170);
+.divCard {
+  background-color: rgb(255, 215, 12);
+  border: 1px solid red;
+  margin: 5px 5px;
 }
 .colored-text {
   background-image: linear-gradient(
